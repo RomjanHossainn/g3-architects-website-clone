@@ -1,0 +1,147 @@
+
+/* font work sans  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&family=Poppins&family=Work+Sans:wght@400;600;700&display=swap');
+
+
+/* :default styles start */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.big-title{
+    color: #131313;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.min-title{
+    color: #131313;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.description-style{
+    color:#727272;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin: 24px 0px;
+}
+
+.btn-style{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+/* :default style end  */
+
+/* header style  */
+
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 130px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu > ul{
+    display: flex;
+}
+.nav-menu > ul > li{
+    margin-left: 50px;
+    
+}
+.nav-menu > ul > li > a{
+    color:#424242;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */ 
+}
+
+.banner-title{
+    color: #131313;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-content-img{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.banner-img{
+    max-width: 100%;
+    margin-top: 24px;
+}
+
+
+/* full website media quary */
+
+/* mobile device */
+@media screen and (max-width:640px) {
+
+    /* header responsive */
+
+    header{
+        padding: 20px 25px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu > ul {
+        transform: translateX(-24px);
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+     
+}
+
+/* tablet device */
+@media screen and (min-width:641px) and (max-width:1024px) {
+
+    /* header responsive */
+    
+    header{
+        padding: 25px 40px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-menu > ul {
+        transform: translateX(-24px);
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+
