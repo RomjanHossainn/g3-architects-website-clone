@@ -139,6 +139,82 @@ nav{
 }
 
 
+/* featured section style */
+
+.featured-container{
+    display: flex;
+    padding: 50px 120px;
+    gap: 4rem;
+}
+
+.featured-container > div{
+    max-width: calc((100% - 3rem)/2);
+    position: relative;
+}
+
+.featured-img{
+    height: 100%;
+}
+
+.featured-img img{
+    width: 100%;
+    min-height: 100%;
+    
+}
+
+.featured-title-part h2{
+    border-left: 2px solid #FF900E;
+    padding-left: 20px;
+}
+
+.featured-card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+.featured-card h4{
+    color: #131313;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.featured-card p{
+    color:#727272;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin: 10px 0px;
+}
+
+.expraine-box{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 220px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: -40px;
+    left: -30px;
+}
+.expraine-box h5{
+    margin-top: -15px;
+}
+.expraine-box .box h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 107.692% */
+}
+
 
 
 /* full website media quary */
@@ -175,8 +251,27 @@ nav{
     .team-container >div{
         width: 90%;
     }
+
+    /* featured section responsive */
+
+    .featured-container{
+        flex-direction: column;
+        padding: 50px 40px;
+    }
     
-     
+    .featured-container > div{
+        max-width: 100%;
+        
+    }
+    .expraine-box{
+        position: absolute;
+        bottom: -40px;
+        left: 26%;
+    }
+
+   
+    
+    
 }
 
 /* tablet device */
@@ -212,6 +307,31 @@ nav{
     .people img{
         width: 100%;
     }
+
+    .featured-container{
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+    .featured-container > div{
+        max-width: 100%;
+        
+    }
+    .featured-content-card{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .featured-card{
+        flex-basis: calc((100% - 15px)/2);
+        margin-top: 0px;
+    }
 }
+@media screen and (min-width:1024px)and (max-width:1200px){
+    .featured-container{
+        padding: 20px 50px;
+        gap: 3rem;
+    }
+}
+
 
 
